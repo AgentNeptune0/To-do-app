@@ -10,7 +10,10 @@ while True:
   if option == 1:
     
     print("Your tasks are:")
-    print(to_do_list)
+    number = 1
+    for item in to_do_list:
+      print(f"{number}. {item}")
+      number = number + 1
     print("")
   elif option == 2:
     task = str(input("What task do you want to add? "))
